@@ -1,1 +1,1 @@
-# https-github.com-digisic-digitalbank-gen-one
+# digital-bank
