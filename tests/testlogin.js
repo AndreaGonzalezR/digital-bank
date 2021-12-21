@@ -1,6 +1,6 @@
 describe ('TestLogin', () => {
 
-    it('Probar con username y password correctos', async () => {
+    it('Login  with correct username and password', async () => {
 
         await browser.url('');
 
@@ -16,7 +16,7 @@ describe ('TestLogin', () => {
     });
 
 
-    it ('Probar con username incorrecto y password correcto', async () => {
+    it ('Log in with incorrect username and correct password', async () => {
 
         await browser.url('');
         
@@ -28,11 +28,13 @@ describe ('TestLogin', () => {
 
         let submit = await $('[id = "submit"]');
         await submit.click();
+
+        
         
     });
 
     
-    it ('Probar con username correcto y password incorrecto', async () => {
+    it ('Log in with correct username and incorrect password', async () => {
 
         await browser.url('');
 
@@ -48,7 +50,7 @@ describe ('TestLogin', () => {
     });
 
 
-    it('Probar credenciales correctas y seleccionar checkbox de Remember me', async () => {
+    it('Login with correct credentials and Remember me chechbox', async () => {
 
         await browser.url('');
 
